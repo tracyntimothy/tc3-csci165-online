@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
 import java.lang.Integer;
+import java.lang.Object;
 
 class Primitives {
 
@@ -67,9 +68,13 @@ class Primitives {
 			int line2 = input.nextInt();
 			int divisor = line2;
 		//Perform calculations for floor division and floor modulus
+			//declare variables to hold result of calulations: floorD and floorM
+			float floorD = Math.floorDiv(dividend, divisor);
+			float floorM = Math.floorMod(dividend, divisor);
+			//print to console uning float printf and float format
+			System.out.printf("Floor Division is '%f' (using %%f)%n", floorD);
+			System.out.printf("Floor Modulus is '%f' (using %%f)%n", floorM);
 
-			System.out.println("Floor Division = " + Math.floorDiv(dividend,divisor));
-			System.out.println("Floor Modulus  = " + Math.floorMod(dividend,divisor));
 	}//end of main
 
 }//end of class
